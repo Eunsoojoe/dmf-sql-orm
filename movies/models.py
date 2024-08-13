@@ -8,7 +8,7 @@ class Actor(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=500)
-    year = models.Int egerField()
+    year = models.IntegerField()
     actors = models.ManyToManyField(Actor, related_name='movies')
 
 
